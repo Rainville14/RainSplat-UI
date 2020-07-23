@@ -1,0 +1,21 @@
+.bg-neutral {
+    background-color: color('neutral','bg')
+}
+
+.mw-900 {
+    max-width: 900px;
+}
+
+@media only screen and (max-width: 600px) {
+    .v-application--wrap {
+        background: color('neutral', 'bg');
+    }
+
+    .v-stepper__header {
+        background: color('neutral', 'white')
+    }
+    
+    .container {
+        padding: 0;
+    }
+}

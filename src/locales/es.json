@@ -1,0 +1,25 @@
+{
+    "common": {
+        "check_status": "Comprobar Estado"
+    },
+    "general": {
+        "greetings": {
+            "welcome_to": "Bienvenido a"
+        }
+    },
+    "forms": {
+        "labels": {
+            "last_name": "Apellido"
+        }
+    },
+    "buttons": {
+        "status": {
+            "check_status": "@:common.check_status",
+            "get_status": "Obtener el estado"
+        }
+    },
+    "navigation": {
+        "become_member": "Hazte miembro",
+        "check_status": "@:common.check_status"
+    }
+}

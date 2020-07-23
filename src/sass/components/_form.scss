@@ -1,0 +1,106 @@
+.v-radio {
+    &.theme--light {
+        .v-icon {
+            background-color: color('neutral', 'white');
+            border-radius: 100%;
+            width: 20px;
+            height: 20px;
+            color: color('neutral','gray');
+        }
+        .v-input--selection-controls__input {
+            margin: 5px 0 0 0;
+        }
+        .v-label {
+            color: color('neutral', 'text');
+        }
+    }
+}
+.v-input--selection-controls {
+    margin-top: 0;
+}
+.required {
+    .v-label {
+        &:first-child::after {
+            content: "*";
+            color: color('red');
+        }
+    }
+}
+.v-input {
+    &.theme--light {
+        &.v-input--checkbox {
+            .v-input__slot {
+                background: none !important;
+                margin-bottom: 0;
+            }
+            padding: 0;
+            margin: 0;
+        }
+    }
+    &--radio-group__input > .v-label {
+        margin-bottom: 8px;
+        height: auto;
+    }
+}
+
+.ssn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dnd {
+    width: 100%;
+}
+
+.dnd__drop-zone {
+    background: color('neutral', 'white');
+    color: color('blue');
+    border: 2px dashed color('neutral', 'light-gray');
+    &:hover {
+        background: color('blue', 'highlight');
+    }
+}
+
+.dnd__file {
+    background: color('neutral', 'white');
+    border: 1px solid color('neutral', 'light-gray');
+    border-radius: 2px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 16px;
+    &.disabled {
+        opacity: 0.4;
+    }
+}
+
+.dnd__file-info {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dnd__file-name {
+    color: color('neutral', 'gray');
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    flex-grow: 1;
+    margin-left: 16px;
+}
+
+.dnd__file-action-items {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+    .dnd__file-name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
+}

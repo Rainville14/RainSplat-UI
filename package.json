@@ -1,0 +1,80 @@
+{
+  "name": "meridianlinkvueapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "cross-env DEV_SERVER=true vue-cli-service serve --https=true --port=8081",
+    "build": "cross-env DEV_SERVER=false vue-cli-service build --mode=$NODE_ENV",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
+    "local": "cross-env DEV_SERVER=true NODE_ENV=local vue-cli-service serve --mode=local --https=true --port=8081"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "core-js": "^3.6.5",
+    "html2canvas": "^1.0.0-rc.5",
+    "jspdf": "^1.5.3",
+    "v-money": "^0.8.1",
+    "vue": "^2.6.11",
+    "vue-analytics": "^5.22.1",
+    "vue-currency-input": "^1.20.2",
+    "vue-gtm": "^2.3.1",
+    "vue-i18n": "^8.18.2",
+    "vue-router": "^3.3.4",
+    "vue-the-mask": "^0.11.1",
+    "vuetify": "^2.2.30",
+    "vuex": "^3.5.1",
+    "vuex-map-fields": "^1.4.0"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vue/cli-plugin-eslint": "^4.4.6",
+    "@vue/cli-service": "^4.4.6",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "custom-event-polyfill": "^1.0.7",
+    "deepmerge": "^4.2.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "events-polyfill": "^2.1.2",
+    "fibers": "^4.0.3",
+    "intersection-observer": "^0.7.0",
+    "material-design-icons-iconfont": "^5.0.1",
+    "prerender-spa-plugin": "^3.2.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-i18n": "^0.6.1",
+    "vue-cli-plugin-prerender-spa": "^1.1.6",
+    "vue-cli-plugin-vuetify": "^2.0.7",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.6.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": 0
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "defaults",
+    "> 1%",
+    "last 2 versions",
+    "ie 11"
+  ]
+}

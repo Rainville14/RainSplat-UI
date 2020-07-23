@@ -1,0 +1,21 @@
+a {
+    transition: .2s ease-in-out;
+    &:not(.v-btn) {
+        color: color('blue') !important;
+        font-weight: bold;
+        &:hover {
+            color: color('blue','hover') !important;
+            text-decoration: underline !important;
+        }
+        &.secondary {
+            color: color('neutral', 'gray') !important;
+            background-color: transparent !important;
+            font-weight: normal !important;
+            text-decoration: underline;
+            &:hover {
+                color: color('neutral','gray') !important;
+                text-decoration: underline !important;
+            }
+        }
+    }
+}
