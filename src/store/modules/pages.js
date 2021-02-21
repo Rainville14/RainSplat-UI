@@ -10,7 +10,7 @@ let state = {
 
 // actions
 const actions = {
-    getPageContent({ commit }, slug) {
+    getPageContent ({ commit }, slug) {
         return new Promise((resolve, reject) => {
             content.getPageContent(slug)
                 .then(res => {
@@ -22,7 +22,7 @@ const actions = {
                 });
         });
     },
-    getHomepage({ commit }) {
+    getHomepage ({ commit }) {
         return new Promise((resolve, reject) => {
             content.getHomepage()
                 .then(res => {
@@ -39,17 +39,17 @@ const actions = {
 
 // mutations
 const mutations = {
-    getPageContent(state, content) {
+    getPageContent (state, content) {
         state.content = {
             title: content[0].title.rendered,
             renderedContent: content[0].content.rendered
         }
     },
-    getHomepage(state, content) {
+    getHomepage (state, content) {
         console.log(`CONTENT: ${JSON.stringify(content)}`);
         state.content = {
-            title: content.title.rendered,
-            renderedContent: content.content.rendered
+            title: content[0].title.rendered,
+            renderedContent: content[0].content.rendered
         }
     }
 };

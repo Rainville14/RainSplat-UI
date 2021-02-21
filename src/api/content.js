@@ -2,10 +2,10 @@ import { api } from '../utilities/ajax';
 // import { products } from '../../data/products';
 
 export default {
-    getPageContent(slug, silentLoad = false) {
+    getPageContent (slug, silentLoad = false) {
         return new Promise((resolve, reject) => {
             api(
-                `https://localhost:8443/wp-json/wp/v2/pages?slug=${slug}`,
+                `https://localhost:8082/wp-json/wp/v2/pages?slug=${slug}`,
                 "GET",
                 null,
                 silentLoad
@@ -16,10 +16,10 @@ export default {
             });
         });
     },
-    getHomepage(slug, silentLoad = false) {
+    getHomepage (slug, silentLoad = false) {
         return new Promise((resolve, reject) => {
             api(
-                `https://localhost:8443/wp-json/wp/v2/homepage`,
+                `https://localhost:8082/wp-json/wp/v2/homepage`,
                 "GET",
                 null,
                 silentLoad

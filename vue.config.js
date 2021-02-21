@@ -35,7 +35,15 @@ module.exports = {
 	},
 	devServer: {
 		disableHostCheck: true,
-		port: process.env.port
+		port: process.env.port,
+		proxy: {
+			"^/wp-json/": {
+				changeOrigin: true,
+				secure: false,
+				target: "http://www.rainsplat.com",
+				logLevel: "debug"
+			}
+		}
 	},
 	transpileDependencies: [
 		'axios',
