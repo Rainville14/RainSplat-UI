@@ -1,10 +1,10 @@
 a {
     transition: .2s ease-in-out;
     &:not(.v-btn) {
-        color: color('blue') !important;
+        color: color('accent') !important;
         font-weight: bold;
         &:hover {
-            color: color('blue','hover') !important;
+            color: color('accent','hover') !important;
             text-decoration: underline !important;
         }
         &.secondary {

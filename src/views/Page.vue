@@ -17,9 +17,9 @@ export default {
     }),
   },
   methods: {
-    ...mapActions("pages", ["getHomepage"]),
+    ...mapActions("pages", ["getPageContent"]),
     loadContent() {
-      this.getHomepage();
+      this.getPageContent(this.$route.params.slug);
     },
   },
   beforeMount() {

@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import api from './modules/api';
+import pages from './modules/pages';
+import config from './modules/config';
 
 import { getField, updateField } from 'vuex-map-fields';
 
@@ -14,6 +16,8 @@ export default new Vuex.Store({
         updateField
     },
     modules: {
-        api
+        api,
+        pages,
+        config
     }
 })

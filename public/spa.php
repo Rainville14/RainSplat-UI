@@ -1,4 +1,4 @@
-<?php
+`<?php
 /**
 * Template Name: Single Page App
 *
@@ -33,4 +33,4 @@
     ?>
   </body>
 
-</html>
+</html>`

@@ -22,7 +22,7 @@
     .v-label {
         &:first-child::after {
             content: "*";
-            color: color('red');
+            color: color('error');
         }
     }
 }
@@ -55,10 +55,10 @@
 
 .dnd__drop-zone {
     background: color('neutral', 'white');
-    color: color('blue');
+    color: color('accent');
     border: 2px dashed color('neutral', 'light-gray');
     &:hover {
-        background: color('blue', 'highlight');
+        background: color('accent', 'highlight');
     }
 }
 

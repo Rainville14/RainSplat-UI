@@ -1,23 +1,36 @@
 // Color
 $colors: (
-    'green': (
-        'base': rgb(18,118,77), //#12764D
-        'hover': rgb(32,126,88), //#207E58
+    'primary': (
+        'base': rgb(214,14,0), //#D60E00
+        'hover': rgb(255,5,0), //#207E58
+        'text': rgb(255,255,255),
         'highlight': rgb(231,241,237), //#E7F1ED
-        'shadow': rgba(18,118,77,0.46), //#12764D 46%
+        'shadow': rgba(214,14.0,0.46), //#12764D 46%
     ),
-    'blue': (
-        'base': rgb(0,115,209), //#0073D1
-        'hover': rgb(0,98,176), //#0062B0
-        'highlight': rgb(243,252,255), //#F3FCFF
+    'accent': (
+        'base': rgb(27,27,27), //#1B1B1B
+        'hover': rgb(55,55,55), //#0062B0
+        'text': rgb(255,255,255),
+        'highlight': rgb(3,3,3), //#F3FCFF
+        'border': rgb(27,27,27), //#1780D5
+    ),
+    'secondary-accent': (
+        'base': rgb(14,138,135), //#0073D1
+        'hover': rgb(54,178,175), //#0062B0
+        'highlight': rgb(14,138,135), //#F3FCFF
         'border': rgb(23,128,213), //#1780D5
     ),
-    'yellow': (
-        'base': rgb(247,183,0), //#F7B700
-        'shadow': rgba(247, 183, 0, 0.46), //#F7B700 46%
+    'alert': (
+        'base': rgb(14,138,135), //#0073D1
+        'hover': rgb(54,178,175), //#0062B0
+        'highlight': rgb(14,138,135), //#F3FCFF
+        'border': rgb(23,128,213), //#1780D5
     ),
-    'red': (
-        'base': rgb(183,28,28), //#b71c1c
+    'error': (
+        'base': rgb(255,0,0), //#0073D1
+        'hover': rgb(54,178,175), //#0062B0
+        'highlight': rgb(14,138,135), //#F3FCFF
+        'border': rgb(23,128,213), //#1780D5
     ),
     'neutral': (
         'bg': rgb(247,248,249), //#F7F8F9

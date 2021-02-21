@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Homepage from '@/views/Homepage'
+import Page from '@/views/Page';
+import Styleguide from '@/views/Guides/Styleguide';
 
 Vue.use(Router)
 
@@ -12,6 +14,16 @@ const router = new Router({
       name: 'Homepage',
       component: Homepage,
       exact: true
+    },
+    {
+      path: '/styleguide',
+      name: 'Styleguide',
+      component: Styleguide
+    },
+    {
+      path: '/:slug?',
+      name: 'Pages',
+      component: Page
     }
   ]
 })

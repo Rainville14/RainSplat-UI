@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "cross-env DEV_SERVER=true vue-cli-service serve --https=true --port=8081",
+    "serve": "cross-env DEV_SERVER=true vue-cli-service serve --https=true --port=8082",
     "build": "cross-env DEV_SERVER=false vue-cli-service build --mode=$NODE_ENV",
     "lint": "vue-cli-service lint",
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",

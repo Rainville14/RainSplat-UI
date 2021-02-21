@@ -26,7 +26,7 @@ Vue.use(money, {
 
 Vue.use(VueCurrencyInput, {
     globalOptions: {
-        currency: 'USD', 
+        currency: 'USD',
         locale: 'en'
     }
 });
@@ -37,7 +37,7 @@ Vue.use(VueAnalytics, {
     id: process.env.VUE_APP_GA_UA,
     router,
     autoTracking: {
-        pageviewTemplate (route) {
+        pageviewTemplate(route) {
             return {
                 page: route.path,
                 title: document.title,
@@ -49,8 +49,8 @@ Vue.use(VueAnalytics, {
 
 Vue.use(VueGtm, {
     id: process.env.VUE_APP_GTM_ID, // Your GTM single container ID or array of container ids ['GTM-xxxxxxx', 'GTM-yyyyyyy']
-    enabled: process.env.VUE_APP_GTM_ENABLED, // defaults to true. Plugin can be disabled by setting this to false for Ex: enabled: !!GDPR_Cookie (optional)
-    debug: process.env.VUE_APP_GTM_DEBUG, // Whether or not display console logs debugs (optional)
+    enabled: process.env.VUE_APP_GTM_ENABLED === 'true', // defaults to true. Plugin can be disabled by setting this to false for Ex: enabled: !!GDPR_Cookie (optional)
+    debug: process.env.VUE_APP_GTM_DEBUG === 'true', // Whether or not display console logs debugs (optional)
     loadScript: true, // Whether or not to load the GTM Script (Helpful if you are including GTM manually, but need the dataLayer functionality in your components) (optional) 
     vueRouter: router // Pass the router instance to automatically sync with router (optional)
 });
